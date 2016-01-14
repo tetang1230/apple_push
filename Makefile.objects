@@ -1,0 +1,8 @@
+apple_push.lo: /Users/chester/Downloads/software/apple_push/apple_push.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/Users/chester/Downloads/software/apple_push $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /Users/chester/Downloads/software/apple_push/apple_push.c -o apple_push.lo 
+$(phplibdir)/apple_push.la: ./apple_push.la
+	$(LIBTOOL) --mode=install cp ./apple_push.la $(phplibdir)
+
+./apple_push.la: $(shared_objects_apple_push) $(APPLE_PUSH_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --mode=link $(CC) $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS) -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_apple_push) $(APPLE_PUSH_SHARED_LIBADD)
+

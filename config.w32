@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("apple_push", "for apple_push support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("apple_push", "enable apple_push support", "no");
+
+if (PHP_APPLE_PUSH != "no") {
+	EXTENSION("apple_push", "apple_push.c");
+}
+
