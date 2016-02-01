@@ -2,6 +2,7 @@ Makefile.objects
 autom4te.cache/
 Makefile
 apple_push.la
+apple_push.lo
 .libs/
 modules/
 autom4te.cache/requests
