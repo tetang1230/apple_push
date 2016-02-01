@@ -1,7 +1,11 @@
+Makefile.objects
+autom4te.cache/
 Makefile
+apple_push.la
+.libs/
+modules/
 autom4te.cache/requests
 config.log
 config.nice
 config.status
 libtool
-modules/apple_push.la
