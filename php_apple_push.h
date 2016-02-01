@@ -40,6 +40,9 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 
+#include <stdbool.h>
+#define BOOL bool
+
 #define DEVICE_TOKEN_BIN_SIZE 32
 
 extern zend_module_entry apple_push_module_entry;
